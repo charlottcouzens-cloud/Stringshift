@@ -135,7 +135,7 @@ export default function Home() {
     return ()=>lifecycle.abort();
   },[]);
 
-  return <><main className="studio"><header className="topbar"><a className="brand" href="/"><span className="brandmark"><AudioLines size={23}/></span>Stringshift <span className="brand-note">TAB STUDIO</span></a><span className="top-note">Six strings. A new voice.</span></header>
+  return <><main className="studio"><header className="topbar"><a className="brand" href="./"><span className="brandmark"><AudioLines size={23}/></span>Stringshift <span className="brand-note">TAB STUDIO</span></a><span className="top-note">Six strings. A new voice.</span></header>
     <div className="intro"><div><p className="eyebrow">GUITAR → MANDOLIN</p><h1>Same melody. New strings.</h1><p>Bring your guitar tabs to the mandolin.</p></div><button className="secondary" onClick={print} disabled={!available}><Download size={17}/> Save as PDF</button></div>
     <div className="title-row"><label htmlFor="title">TAB TITLE</label><input id="title" value={title} maxLength={150} placeholder="Untitled arrangement" onChange={e=>setTitle(e.target.value)}/><span>YOUR ARRANGEMENT</span></div>
     <div className="workspace">
